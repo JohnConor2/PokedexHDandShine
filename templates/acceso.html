@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Pokemon">
+<head>
+	<!--Hosted Libraries Jquery-->
+	<script src="../lib/jquery.js"></script>
+	<!--Framework bootstrap CSS-->
+	<link rel="stylesheet" href="../lib/boos/css/bootstrap.css">
+	<!--Characters Special-->
+	<meta charset="utf-8">
+	<!--Styles-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--Icon-->
+	<link rel="icon" href="../img/pika.png">
+
+	<title>Pokedex by JohnConor2</title>
+
+</head>
+<body>
+	<div class="container-fluid banner1">
+		<div class="row one">
+			<div class="col-md-4"><img src="../img/Pokedex.png" class="img-responsive" id="creator"></div>
+			<div class="col-md-3"><img src="../img/pokeball.png" class="img-responsive" id="poeball"></div>
+			<div class="col-md-5"><img src="../img/four.png" class="img-responsive" id="fourpoke"></div>
+		</div>
+		<!--The next row's is buttons-->
+		<div class="row two">
+			<div class="col-md-7"></div>
+			<div class="col-md-1"><button type="button" class="btn btn-light"><a href="https://pokeapi.co/">PokeApi</a></button></div>
+			<div class="col-md-1"><button type="button" class="btn btn-light"><a href="../index.html">Log In</a></button></div>
+			<div class="col-md-1"><button type="button" class="btn btn-light"><a href="#">Button #3</a></button></div>
+			<div class="col-md-1"><button type="button" class="btn btn-light"><a href="#">Button #4</a></button></div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+	<br>
+	<div class="container forti" ng-controller="PokemonList" important="01000100 01100101 01110010 01101001 01100011 01101011 00100000 01000001 01101100 01100101 01101010 01100001 01101110 01100100 01110010 01101111 00100000 01001100 01101111 01110010 01100101 01101110 01111010 01101111 00100000 01000011 11000011 10111010">
+		<div class="row part">
+			<div class="col-md-2 i"><b>Sprite Pokemon</b></div>
+			<div class="col-md-2 i"><b>S. Shine Pokemon</b></div>
+			<div class="col-md-1 i"><b>ID</b></div>
+			<div class="col-md-2 i"><b>Name Pokemon</b></div>
+			<div class="col-md-1 i"><b>Species</b></div>
+			<div class="col-md-1 i"><b>Type</b></div>
+			<div class="col-md-1 i"><b>Ability</b></div>
+			<div class="col-md-1 i"><b>Status</b></div>
+			<div class="col-md-1"></div>			
+		</div>
+		<div class="row three" ng-repeat="x in Pokedex">
+			<div class="col-md-2 three"><img src="{{x.data.sprites.front_default}}"></div>
+			<div class="col-md-2 "><img src="{{x.data.sprites.front_shiny}}"></div>
+			<div class="col-md-1 a">{{x.data.id}}</div>
+			<div class="col-md-2 a">{{x.data.name}}</div>
+			<div class="col-md-1 a">{{}}</div>			
+			<div class="col-md-1 a">{{}}</div>			
+			<div class="col-md-1 a">{{}}</div>
+			<div class="col-md-1 a">{{x.status}}</div>			
+			<div class="col-md-1 five"></div>
+		</div>		
+	</div>
+
+
+	<!--Framework AngularJs-->
+	<script src="../lib/angular.js"></script>
+	<!--Framework Bootstrap Js-->
+	<script src="../lib/boos/js/bootstrap.js"></script>
+	<!--Code of Script-->
+	<script src="../js/script.js"></script>
+
+</body>
+</html>

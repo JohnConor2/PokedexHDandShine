@@ -1,0 +1,32 @@
+body{
+	background-image: url("../img/login.jpg");
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.content{
+	background-color: rgba(0,0,0,0.5);
+	width: 310px;
+	height: 330px;
+	border-radius: 5%;
+	margin-top:-45px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.datos{
+	width: 100%;
+}
+.pika{
+	width: 190px;
+	height: 190px;
+	margin-top: 25px;
+}
+.font,#font{
+	font-family: 'Kanit', sans-serif;
+	color: white;
+}
+a,a:hover{
+	text-decoration: none;
+	color: white;
+}
